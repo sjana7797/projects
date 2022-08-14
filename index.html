@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Analog Clock</title>
+</head>
+
+<body>
+
+  <div>
+    <div id="clock" class="w-80 h-80 border-4 border-solid border-emerald-400 rounded-full relative">
+      <div id="seconds" class="absolute w-0.5 h-36 left-[159px] bottom-40 bg-rose-400 rotate-0 origin-bottom"></div>
+      <div id="hours" class="absolute w-0.5 h-32 left-[159px] bottom-40 bg-teal-400 rotate-0 origin-bottom"></div>
+      <div id="minutes" class="absolute w-1 h-24 left-[158px] bottom-40 bg-amber-400 rotate-0 origin-bottom"></div>
+      <div id="center" class="absolute w-2 h-2 left-[156px] bottom-[156px] bg-fuchsia-400 rounded-full"></div>
+    </div>
+    <div class="mt-5 flex justify-center items-center text-2xl text-emerald-400 gap-1">
+      <span id="hour-time">hh</span>
+      <span>:</span>
+      <span id="minute-time">mm</span>
+      <span>:</span>
+      <span id="second-time">ss</span>
+    </div>
+    <div class="text-center text-emerald-400 text-xl font-medium capitalize" id="day">
+    </div>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
